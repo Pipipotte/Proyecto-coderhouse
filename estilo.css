@@ -505,6 +505,100 @@ footer{
     margin-left: 2rem;
 }
 
+/*EMPIEZA EL MEDIA QUERIES DEL SERVICIOS*/
+@media screen and (max-width:1200px){
+    .cajaServicioTexto h2{
+        font-size: 2.2em;
+    }
+    .cajaServicioTexto h3{
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width:1024px){
+    .cajaServicioLeerMas{
+        display: none;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:1023px){
+    .mainServicios{
+        margin-top: 2em;
+    }
+    .cajaServicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .cajaServicioTexto{
+        justify-content: center;
+        width: 100%;
+    }
+    .cajaServicioTexto h2{
+        font-size: 2.2em;
+        line-height: 1em;
+    }
+    .cajaServicioTexto h3{
+        padding-top: 0.4em;
+        padding-left: 3em;
+        padding-right: 3em;
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+    .cajaServicioSvg{
+        justify-content: center;
+        width: 8.2em;
+    }
+    .cajaServicioSvg img{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .cajaServicios{
+        justify-content: center;
+        width: fit-content;
+    }
+    .cajaServicioMas{
+        display: none;
+    }
+    .cajaServicioLeerMas p{
+        margin-top: 1em;
+        font-size: 2em;
+        font-variant: small-caps;
+        font-weight: 700;
+        color: #00D2FF;
+    }
+}
+
+@media screen and (max-width:480px){
+    .cajaServicioTexto h2{
+        font-size: 1.2em;
+        line-height: 1em;
+    }
+    .cajaServicioTexto h3{
+        padding-top: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .cajaServicioSvg{
+        justify-content: center;
+        width: 5em;
+    }
+    .cajaServicioSvg img{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .cajaServicioLeerMas p{
+        margin-top: 0.5em;
+        font-size: 1.5em;
+        font-variant: small-caps;
+        font-weight: 700;
+        color: #00D2FF;
+    }
+}
+
+
 /*estilo de nosotros*/
 
 .mainNosotros{
@@ -541,10 +635,6 @@ footer{
     width: 60%;
     text-align: center;
 }
-.divFormTexto{
-    border: blue solid 2px;
-}
-
 
 
 
