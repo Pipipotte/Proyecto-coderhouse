@@ -541,7 +541,9 @@ footer{
     width: 60%;
     text-align: center;
 }
-
+.divFormTexto{
+    border: blue solid 2px;
+}
 
 
 
