@@ -97,6 +97,74 @@ li{
     font-variant: small-caps;
     letter-spacing: 1px;
     padding: 10px 8px 10px 8px;
+    transition: all 0.5s;
+    animation-timing-function: ease;
+}
+li:hover{
+    font-weight: 900;
+    line-height: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.10);
+    transition: all 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+.bodyPortfolio .header .navDesktop ul li.navPortfolio{
+    background-color: #B2F2FF;
+    font-weight: 900;
+    line-height: 1;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.10);
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-name: navPortfolio;
+}
+@keyframes navPortfolio {
+    0% {background-color: white;}
+    100% {background-color: #B2F2FF;}
+}
+.bodyServicios .header .navDesktop ul li.navServicios{
+    background-color: #B2F2FF;
+    font-weight: 900;
+    line-height: 1;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.10);
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-name: navServicios;
+}
+@keyframes navServicios {
+    0% {background-color: white;}
+    100% {background-color: #B2F2FF;}
+}
+.bodyNosotros .header .navDesktop ul li.navNosotros{
+    background-color: #B2F2FF;
+    font-weight: 900;
+    line-height: 1;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.10);
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-name: navNosotros;
+}
+@keyframes navNosotros {
+    0% {background-color: white;}
+    100% {background-color: #B2F2FF;}
+}
+.bodyContacto .header .navDesktop ul li.navContacto{
+    background-color: #B2F2FF;
+    font-weight: 900;
+    line-height: 1;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.10);
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-name: navContacto;
+}
+@keyframes navContacto {
+    0% {background-color: white;}
+    100% {background-color: #B2F2FF;}
 }
 .displayNone{
     display: none;
@@ -123,6 +191,14 @@ li{
     grid-area: bienvenida;
     margin-top: 140px;
     margin-bottom: 140px;
+    animation-name: bienvenida_index;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+@keyframes bienvenida_index {
+    0% {opacity: 0;
+    margin-top: 200px;}
+    100% {opacity: 1;}
 }
 .bienvenidaDesc{
     margin-top: 20px;
@@ -184,10 +260,207 @@ footer{
     align-items: center;
     justify-content: center;
 }
+/*estilo del portfolio*/
 
-/*EMPIEZA EL MEDIA QUERIES DE INDEX*/
-/*lo aclaro porque me cuesta encontrar esta seccion*/
+.mainPortfolio{
+    display: block;
+}
+.mainPortfolio img{
+    width: 100%;
+    height: auto;
+}
+.cajasPortfolio{
+    display: flex;
+    flex-wrap: nowrap;
+    background: #E8F2D1;
+    border-radius: 52px;
+    padding: 3em;
+    margin-bottom: 70px;
+    width: 100%;
+    height: 100%;
+}
+.cajasInfo{
+    overflow: auto;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 500px;
+    height: 300px;
+}
+.cajasPortfolioIMG{
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.cajasPortfolioIMGprimario{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.cajasPortfolioIMGterciario{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.cajasPortfolioIMGa{
+    padding: 10px;
+}
+.cajasPortfolioIMGb{
+    padding: 10px;
+}
+.cajasPortfolioIMGc{
+    padding: 10px;
+}
+.cajasPortfolioIMGd{
+    padding: 10px;
+}
+#cliente1{
+    background-color: #E8F2D1;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-name: cajaCliente1;
+}
+@keyframes cajaCliente1 {
+    0% {opacity: 0;
+    margin-top: 200px;}
+    100% {opacity: 1;}
+}
+#cliente2{
+    background-color: #CFCBFF;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-name: cajaCliente2;
+}
+@keyframes cajaCliente2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#cliente3{
+    background-color: #FF8760;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-name: cajaCliente3;
+}
+@keyframes cajaCliente3 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#cliente4{
+    background-color: #86C3E4;
+}
+#cliente3 .cajasInfo h3{
+    color: white;
+}
+#cliente3 .cajasInfo h2{
+    color: white;
+}
+#cliente3 .cajasInfo p{
+    color: white;
+}
 
+/*estilo de servicios*/
+
+.mainServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+.mainServicios img{
+    width: 100%;
+    height: auto;
+}
+.servicios{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-name: servicios;
+}
+.servicios.border{
+    border-top: #B2F2FF solid 3px;;
+    border-bottom: #B2F2FF solid 3px;
+}
+.cajaServicios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.cajaServicioSvg{
+    width: auto;
+    height: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.cajaServicioTexto{
+    width: 50rem;
+    height: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.cajaServicioMas{
+    align-items: flex-start;
+    width: 40px;
+    height: 100%;
+    margin-left: 2rem;
+}
+@keyframes servicios {
+0% {opacity: 0;
+    margin-top: 100px;}
+100% {opacity: 1;}
+}
+
+/*estilo de nosotros*/
+
+.mainNosotros{
+    display: flex;
+    flex-direction: column;
+}
+
+/*estilo de contacto*/
+
+.mainContacto{
+    width: 100%;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.formContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.divForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.divFormTexto{
+    display: flex;
+    width: 60%;
+    text-align: center;
+}
+
+/********************************************
+EMPIEZA EL MEDIA QUERIES DE INDEX
+*********************************************/
 @media screen and (min-width:1024px){
     .header>.logoVariant2{
         display: none;
@@ -331,66 +604,14 @@ footer{
         margin-bottom: 20px;
     }
 }
-/*TERMINA EL MEDIA QUERIES DE INDEX*/
+/********************************************
+TERMINA EL MEDIA QUERIES DEL INDEX
+*********************************************/
 
-/*estilo del portfolio*/
 
-.mainPortfolio{
-    display: block;
-}
-.mainPortfolio img{
-    width: 100%;
-    height: auto;
-}
-.cajasPortfolio{
-    display: flex;
-    flex-wrap: nowrap;
-    background: #E8F2D1;
-    border-radius: 52px;
-    padding: 3em;
-    margin-bottom: 70px;
-    width: 100%;
-    height: 100%;
-}
-.cajasInfo{
-    overflow: auto;
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 500px;
-    height: 300px;
-}
-.cajasPortfolioIMG{
-    justify-content: center;
-    align-items: center;
-    width: auto;
-}
-.cajasPortfolioIMGprimario{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-}
-.cajasPortfolioIMGterciario{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.cajasPortfolioIMGa{
-    padding: 10px;
-}
-.cajasPortfolioIMGb{
-    padding: 10px;
-}
-.cajasPortfolioIMGc{
-    padding: 10px;
-}
-.cajasPortfolioIMGd{
-    padding: 10px;
-}
-
-/*EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO*/
-/*lo aclaro porque me cuesta encontrar esta seccion*/
-
+/********************************************
+EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
+*********************************************/
 @media screen and (max-width:1023px){
     .cajasPortfolio{
         display: block;
@@ -451,61 +672,13 @@ footer{
         margin: 8px;
     }
 }
-/*TERMINA EL MEDIA QUERIES DEL PORTFOLIO*/
+/********************************************
+TERMINA EL MEDIA QUERIES DEL PORTFOLIO
+*********************************************/
 
-
-/*estilo de servicios*/
-
-.mainServicios{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 150px;
-    margin-bottom: 200px;
-}
-.mainServicios img{
-    width: 100%;
-    height: auto;
-}
-.servicios{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.servicios.border{
-    border-top: #B2F2FF solid 3px;;
-    border-bottom: #B2F2FF solid 3px;
-}
-.cajaServicios{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-}
-.cajaServicioSvg{
-    width: auto;
-    height: auto;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-.cajaServicioTexto{
-    width: 50rem;
-    height: auto;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-.cajaServicioMas{
-    align-items: flex-start;
-    width: 40px;
-    height: 100%;
-    margin-left: 2rem;
-}
-
-/*EMPIEZA EL MEDIA QUERIES DEL SERVICIOS*/
+/********************************************
+EMPIEZA EL MEDIA QUERIES DE SERVICIOS
+*********************************************/
 @media screen and (max-width:1200px){
     .cajaServicioTexto h2{
         font-size: 2.2em;
@@ -597,45 +770,6 @@ footer{
         color: #00D2FF;
     }
 }
-
-
-/*estilo de nosotros*/
-
-.mainNosotros{
-    display: flex;
-    flex-direction: column;
-}
-
-/*estilo de contacto*/
-
-.mainContacto{
-    width: 100%;
-}
-.contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-}
-.formContacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.divForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.divFormTexto{
-    display: flex;
-    width: 60%;
-    text-align: center;
-}
-
-
-
-
+/********************************************
+TERMINA EL MEDIA QUERIES DEL SERVICIOS
+*********************************************/
