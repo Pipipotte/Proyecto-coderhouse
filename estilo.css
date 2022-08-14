@@ -21,6 +21,7 @@ h1{
 h2{
     font-family: 'Changa', sans-serif;
     font-size: 46px;
+    line-height: 3rem;
     font-weight: 700;
     color: #4B6D85;
 }
@@ -315,6 +316,7 @@ ESTILO DEL PORTFOLIO
     padding: 3em;
     margin-bottom: 70px;
     width: 100%;
+    box-shadow: 0px 13px 24px 0px #0000000D;
 }
 .cajasInfo{
     overflow: auto;
@@ -323,6 +325,51 @@ ESTILO DEL PORTFOLIO
     margin-right: 20px;
     width: 500px;
     height: 300px;
+}
+.cajasInfoCaracteristicas{
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 20px;
+}
+.cajasInfoCaracteristicas1{
+    display: flex;
+    gap: 2px;
+    font-family: Epilogue;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    text-align: left;
+    align-items: center;
+    width: fit-content;
+}
+#cajasInfoCaracteristicasCliente1{
+    color: #E5710A;
+}
+#cajasInfoCaracteristicasCliente2{
+    color: #DC2C9C;
+}
+#cajasInfoCaracteristicasCliente2 img{
+    filter: invert(37%) sepia(45%) saturate(2033%) hue-rotate(300deg) brightness(86%) contrast(101%);
+}
+.cajasInfoCaracteristicas1Icon{
+    width: fit-content;
+}
+#cliente1 .cajasInfo{
+    color: red;
+}
+.cajasInfoCaracteristicas2{
+    display: flex;
+    gap: 2px;
+    font-family: Epilogue;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    text-align: left;
+    align-items: center;
+    width: fit-content;
+}
+.cajasInfoCaracteristicas2Icon{
+    width: fit-content;
 }
 .cajasPortfolioIMG{
     justify-content: center;
@@ -352,7 +399,8 @@ ESTILO DEL PORTFOLIO
     padding: 10px;
 }
 #cliente1{
-    background-color: #E8F2D1;
+    background: rgb(255,238,202);
+    background: linear-gradient(90deg, rgba(255,238,202,1) 0%, rgba(255,247,228,1) 100%);
     animation-delay: 0s;
     animation-duration: 1.5s;
     animation-timing-function: cubic-bezier(.78,.1,.24,.9);
@@ -364,7 +412,7 @@ ESTILO DEL PORTFOLIO
     100% {opacity: 1;}
 }
 #cliente2{
-    background-color: #CFCBFF;
+    background-color: #e8f2d1;
     animation-delay: 0s;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -889,6 +937,9 @@ EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
     .cajasPortfolio{
         border-radius: 3em;
     }
+    .cajasInfo h2{
+        font-size: 2rem;
+    }
 }
 @media screen and (max-width:480px){
     .cajasPortfolioIMGa{
@@ -908,6 +959,7 @@ EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
         border-radius: 18px;
     }
     .cajasInfo>h2{
+        line-height: 2rem;
         font-size: 2em;
     }
     .cajasInfo>h3{
@@ -918,6 +970,18 @@ EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
     }
     .cajasInfo{
         margin: 8px;
+    }
+    .cajasInfoCaracteristicas{
+        gap: 4px;
+        flex-direction: row;
+        margin: 0px 0px 8px 0px;
+    }
+    .cajasInfoCaracteristicas div{  
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .cajasInfoCaracteristicas div div img{
+        transform: scale(.8);
     }
 }
 /********************************************
