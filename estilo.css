@@ -110,7 +110,7 @@ li:hover{
     animation-timing-function: ease-in-out;
     animation-duration: 1s;
 }
-.bodyPortfolio .header .navDesktop ul li.navPortfolio{
+.bodyPortfolio .gridPortfolio .header .navDesktop ul li.navPortfolio{
     background-color: #B2F2FF;
     font-weight: 900;
     line-height: 1;
@@ -124,7 +124,7 @@ li:hover{
     0% {background-color: white;}
     100% {background-color: #B2F2FF;}
 }
-.bodyServicios .header .navDesktop ul li.navServicios{
+.gridServicios .header .navDesktop ul li.navServicios{
     background-color: #B2F2FF;
     font-weight: 900;
     line-height: 1;
@@ -138,7 +138,7 @@ li:hover{
     0% {background-color: white;}
     100% {background-color: #B2F2FF;}
 }
-.bodyNosotros .header .navDesktop ul li.navNosotros{
+.gridNosotros .header .navDesktop ul li.navNosotros{
     background-color: #B2F2FF;
     font-weight: 900;
     line-height: 1;
@@ -152,7 +152,7 @@ li:hover{
     0% {background-color: white;}
     100% {background-color: #B2F2FF;}
 }
-.bodyContacto .header .navDesktop ul li.navContacto{
+.gridContacto .header .navDesktop ul li.navContacto{
     background-color: #B2F2FF;
     font-weight: 900;
     line-height: 1;
@@ -170,7 +170,9 @@ li:hover{
     display: none;
 }
 
-/*estilo del index*/
+/********************************************
+ESTILO DEL INDEX
+*********************************************/
 
 .gridIndex{
     display: grid;
@@ -260,14 +262,28 @@ footer{
     align-items: center;
     justify-content: center;
 }
-/*estilo del portfolio*/
 
+/********************************************
+ESTILO DEL PORTFOLIO
+*********************************************/
+
+.gridPortfolio{
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "mainPortfolio"
+    "footer"
+    ;
+}
 .mainPortfolio{
+    grid-area: mainPortfolio;
     display: block;
 }
 .mainPortfolio img{
     width: 100%;
-    height: auto;
 }
 .cajasPortfolio{
     display: flex;
@@ -277,7 +293,6 @@ footer{
     padding: 3em;
     margin-bottom: 70px;
     width: 100%;
-    height: 100%;
 }
 .cajasInfo{
     overflow: auto;
@@ -361,8 +376,20 @@ footer{
     color: white;
 }
 
-/*estilo de servicios*/
-
+/********************************************
+ESTILO DE SERVICIOS
+*********************************************/
+.gridServicios{
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "mainServicios"
+    "footer"
+    ;
+}
 .mainServicios{
     display: flex;
     flex-direction: column;
@@ -370,6 +397,7 @@ footer{
     width: 100%;
     margin-top: 150px;
     margin-bottom: 200px;
+    grid-area: mainServicios;
 }
 .mainServicios img{
     width: 100%;
@@ -421,17 +449,44 @@ footer{
 100% {opacity: 1;}
 }
 
-/*estilo de nosotros*/
-
+/********************************************
+ESTILO DE NOSOTROS
+*********************************************/
+.gridNosotros{
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "mainNosotros"
+    "footer"
+    ;
+}
 .mainNosotros{
     display: flex;
     flex-direction: column;
+    grid-area: mainNosotros;
 }
 
-/*estilo de contacto*/
+/********************************************
+ESTILO DE CONTACTO
+*********************************************/
 
+.gridContacto{
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "mainContacto"
+    "footer"
+    ;
+}
 .mainContacto{
     width: 100%;
+    grid-area: mainContacto;
 }
 .contacto{
     display: flex;
@@ -446,17 +501,143 @@ footer{
     justify-content: center;
     width: 100%;
 }
-.divForm{
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #E9FBFF solid 12px;
+    border-radius: 5%;
+    padding: 20px;
+}
+.fieldsetLegend{
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4B6D85;
+    font-family: 'Epilogue', sans-serif;
+}
+.divForm1{
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-family: 'Kanit', sans-serif;
+    color: #4B6D85;
+}
+.divForm2{
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-family: 'Epilogue', sans-serif;
+    color: #4B6D85;
+}
+#tipodecliente{
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #D3F8FF; 
+    border: #D3F8FF solid 2px;
+    font-family: 'Kanit', sans-serif;
+    color: #4B6D85;
+}
+.divForm2Option{
+    font-weight: 100;
+    padding: 4px;
+    font-size: 16px;
+}
+
+.divForm3{
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-family: 'Kanit', sans-serif;
+    color: #4B6D85;
+}
+.divForm3 input{
+    font-size: 20px;
+    text-align: center;
+    padding: 2px 8px 2px 8px;
+    background-color: #D3F8FF; 
+    border: #D3F8FF solid 2px;
+    border-radius: 8px;
+    font-family: 'Kanit', sans-serif;
+    color: #4B6D85;
+}
+.divForm3 input::placeholder{
+    color: #4B6D85;
+}
+.divForm4{
+    gap: 10px;
+    padding: 10px 0px 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .divFormTexto{
-    display: flex;
     width: 60%;
     text-align: center;
+    font-family: 'Kanit', sans-serif;
+    color: #4B6D85;
+    line-height: 16px;
 }
+.divForm4 textarea{
+    padding: 10px 0px 0px 20px;
+    background-color: #D3F8FF; 
+    border: #D3F8FF solid 2px;
+    border-radius: 16px;
+    font-family: 'Kanit', sans-serif;
+}
+.divForm4 textarea::placeholder{
+    color: #A9D2DA;
+}
+.divForm5{
+    gap: 10px;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.divForm5 input[type=submit]{
+    height: 45px;
+    padding: 2px 16px 2px 16px;
+    font-family: 'Epilogue', sans-serif;
+    font-variant-caps: all-small-caps;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: white;
+    background-color: #00D2FF;
+    border: #00D2FF solid 2px;
+    border-radius: 10px;
+}
+.divForm5 input[type=reset]{
+    height: 45px;
+    padding: 2px 16px 2px 16px;
+    font-family: 'Epilogue', sans-serif;
+    font-variant-caps: all-small-caps;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #8ba6b9;
+    background-color: #E9FBFF;
+    border: #E9FBFF solid 2px;
+    border-radius: 10px;
+}
+
+
 
 /********************************************
 EMPIEZA EL MEDIA QUERIES DE INDEX
