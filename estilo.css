@@ -25,10 +25,11 @@ h2{
     color: #4B6D85;
 }
 h3{
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 100;
     font-size: 32px;
-    font-weight: 400;
-    color: #4B6475;
+    color: #4B6475; 
 }
 h4{
     font-family: 'Epilogue', sans-serif;
@@ -202,9 +203,30 @@ ESTILO DEL INDEX
     margin-top: 200px;}
     100% {opacity: 1;}
 }
+.bienvenidaSaludo{
+    display: flex;
+}
+.bienvenidaSaludoEmoji{
+    position: relative;
+    bottom: 80px; left: 20px;
+    animation-name: bienvenidaSaludoEmoji;
+    animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+    animation-duration: 2s;
+    transform-origin: left bottom;
+}
+@keyframes bienvenidaSaludoEmoji{
+    0%{
+        transform: scale(0.10);
+        opacity: 0;
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(deg);
+    }
+}
 .bienvenidaDesc{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;s
 }
 .bienvenidaButtonCaja{
     display: flex;
@@ -332,8 +354,8 @@ ESTILO DEL PORTFOLIO
 #cliente1{
     background-color: #E8F2D1;
     animation-delay: 0s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(.78,.1,.24,.9);
     animation-name: cajaCliente1;
 }
 @keyframes cajaCliente1 {
@@ -410,8 +432,8 @@ ESTILO DE SERVICIOS
     padding-top: 60px;
     padding-bottom: 60px;
     animation-delay: 0s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(.78,.1,.24,.9);
     animation-name: servicios;
 }
 .servicios.border{
@@ -689,6 +711,28 @@ EMPIEZA EL MEDIA QUERIES DE INDEX
         display: flex;
         justify-content: flex-end;
     }
+    .bienvenidaSaludo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bienvenidaSaludoEmoji{
+        position: relative;
+        bottom: 0px; left: 20px;
+        animation-name: bienvenidaSaludoEmoji;
+        animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+        animation-duration: 1.5s;
+        transform-origin: left bottom;
+    }
+    @keyframes bienvenidaSaludoEmoji{
+        0%{
+            transform: scale(0.10);
+            opacity: 0;
+            transform: rotate(40deg);
+        }
+        100%{
+            transform: rotate(deg);
+        }
+    }
     .bienvenida{
         text-align: center;
         grid-area: bienvenida;
@@ -750,6 +794,28 @@ EMPIEZA EL MEDIA QUERIES DE INDEX
     }
     .footerCopyright>h6{
         font-size: 0.6em;
+    }
+    .bienvenidaSaludo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bienvenidaSaludoEmoji{
+        position: relative;
+        bottom: 0px; left: 20px;
+        animation-name: bienvenidaSaludoEmoji;
+        animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+        animation-duration: 1.5s;
+        transform-origin: left bottom;
+    }
+    @keyframes bienvenidaSaludoEmoji{
+        0%{
+            transform: scale(0.10);
+            opacity: 0;
+            transform: rotate(40deg);
+        }
+        100%{
+            transform: rotate(deg);
+        }
     }
     .bienvenida{
         text-align: center;
