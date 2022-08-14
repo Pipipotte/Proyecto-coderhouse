@@ -598,6 +598,7 @@ ESTILO DE CONTACTO
     border: #D3F8FF solid 2px;
     border-radius: 16px;
     font-family: 'Kanit', sans-serif;
+    resize: none;
 }
 .divForm4 textarea::placeholder{
     color: #A9D2DA;
