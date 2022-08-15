@@ -479,14 +479,16 @@ ESTILO DE SERVICIOS
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 50px;
     animation-delay: 0s;
     animation-duration: 1.5s;
     animation-timing-function: cubic-bezier(.78,.1,.24,.9);
     animation-name: servicios;
 }
-.servicios.border{
-    border-top: #B2F2FF solid 3px;;
+.serviciosBorder{
+    width: 100%;
     border-bottom: #B2F2FF solid 3px;
+    border-top: #B2F2FF solid 3px;
 }
 .cajaServicios{
     display: flex;
@@ -502,7 +504,7 @@ ESTILO DE SERVICIOS
     margin-right: 2rem;
 }
 .cajaServicioTexto{
-    width: 50rem;
+    width: 53rem;
     height: auto;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -513,6 +515,59 @@ ESTILO DE SERVICIOS
     height: 100%;
     margin-left: 2rem;
 }
+.cajaServicioLeerMas{
+    align-items: flex-start;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+#cajaServicioDesc{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    width: 90%;
+    line-height: 1.8rem;
+    color: #00D2FF;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 1s;
+    animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+    animation-duration: 2s;
+}
+
+#btnDiseño{
+    display: none;
+}
+#btnDiseño:checked + label > div div {
+    overflow: hidden;
+    max-height: 200px;
+    transition: all 1s;
+    animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+    animation-duration: 2s;
+}
+#btnRrss{
+    display: none;
+}
+#btnRrss:checked + label > div div {
+    overflow: hidden;
+    max-height: 200px;
+    transition: all 1s;
+    animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+    animation-duration: 2s;
+}
+
+#btnWeb{
+    display: none;
+}
+#btnWeb:checked + label > div div {
+    overflow: hidden;
+    max-height: 200px;
+    transition: all 1s;
+    animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+    animation-duration: 2s;
+}
+
 @keyframes servicios {
 0% {opacity: 0;
     margin-top: 100px;}
@@ -1001,8 +1056,19 @@ EMPIEZA EL MEDIA QUERIES DE SERVICIOS
 }
 @media screen and (min-width:1024px){
     .cajaServicioLeerMas{
-        display: none;
         margin-top: 20px;
+    }
+    .cajaServicioMas{
+        visibility: hidden;
+    }
+    .cajaServicioLeerMas p{
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        font-size: 2em;
+        font-variant: small-caps;
+        font-weight: 700;
+        color: #00D2FF;
     }
 }
 @media screen and (max-width:1023px){
@@ -1030,6 +1096,25 @@ EMPIEZA EL MEDIA QUERIES DE SERVICIOS
         font-size: 1.5em;
         line-height: 1.2em;
     }
+    #cajaServicioDesc{
+        justify-content: center;
+        padding-top: 0.4em;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 100;
+        font-size: 1rem;
+        width: 90%;
+        line-height: 1.2rem;
+        color: #00D2FF;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 1s;
+        animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+        animation-duration: 2s;
+    }
     .cajaServicioSvg{
         justify-content: center;
         width: 8.2em;
@@ -1045,6 +1130,12 @@ EMPIEZA EL MEDIA QUERIES DE SERVICIOS
     .cajaServicioMas{
         display: none;
     }
+    .cajaServicioLeerMas{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+    }
     .cajaServicioLeerMas p{
         margin-top: 1em;
         font-size: 2em;
@@ -1052,6 +1143,7 @@ EMPIEZA EL MEDIA QUERIES DE SERVICIOS
         font-weight: 700;
         color: #00D2FF;
     }
+
 }
 
 @media screen and (max-width:480px){
@@ -1080,6 +1172,25 @@ EMPIEZA EL MEDIA QUERIES DE SERVICIOS
         font-variant: small-caps;
         font-weight: 700;
         color: #00D2FF;
+    }
+    #cajaServicioDesc{
+        justify-content: center;
+        padding-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 100;
+        font-size: 1rem;
+        width: 100%;
+        line-height: 1.2rem;
+        color: #00D2FF;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 1s;
+        animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+        animation-duration: 2s;
     }
 }
 /********************************************
