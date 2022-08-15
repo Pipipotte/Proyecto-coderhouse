@@ -1075,6 +1075,11 @@ EMPIEZA EL MEDIA QUERIES DE SERVICIOS
     .mainServicios{
         margin-top: 2em;
     }
+    .servicios{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 0px;
+    }
     .cajaServicios{
         display: flex;
         flex-direction: column;
@@ -1096,6 +1101,7 @@ EMPIEZA EL MEDIA QUERIES DE SERVICIOS
         font-size: 1.5em;
         line-height: 1.2em;
     }
+
     #cajaServicioDesc{
         justify-content: center;
         padding-top: 0.4em;
