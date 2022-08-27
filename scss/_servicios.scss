@@ -1,0 +1,162 @@
+/********************************************
+ESTILO DE SERVICIOS
+*********************************************/
+.gridServicios{
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "mainServicios"
+    "footer"
+    ;
+    .header{
+        grid-area: header;
+        width: 100%;
+        nav{
+            &.navDesktop{
+                ul{
+                    li{
+                        a{
+                            color: $azul_dark;
+                            &:focus{
+                                font-family: 'Epilogue', sans-serif;
+                                font-weight: 800;
+                                color: $azul_dark;
+                            }
+                            &:active{
+                                color: $azul_dark;
+                                font-weight: 800;
+                            }
+                        }
+                        &.navServicios{
+                            background-color: $celeste_light;
+                            font-weight: 900;
+                            line-height: 1;
+                            border-radius: 6px;
+                            box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.10);
+                            animation-delay: 0s;
+                            animation-duration: 1s;
+                            animation-name: navServicios;
+                            @keyframes navServicios {
+                                0% {background-color: white;}
+                                100% {background-color: $celeste_light;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainServicios{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 150px;
+        margin-bottom: 200px;
+        grid-area: mainServicios;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .serviciosBorder{
+            width: 100%;
+            border-bottom: $celeste_light solid 3px;
+            border-top: $celeste_light solid 3px;
+        }
+        .servicios{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left: 50px;
+            animation-delay: 0s;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(.78,.1,.24,.9);
+            animation-name: servicios;
+            @keyframes servicios {
+                0% {opacity: 0;
+                    margin-top: 100px;}
+                100% {opacity: 1;}
+                }
+            .cajaServicios{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                .cajaServicioSvg{
+                    width: auto;
+                    height: auto;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
+                .cajaServicioTexto{
+                    width: 53rem;
+                    height: auto;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                    .cajaServicioLeerMas{
+                        align-items: flex-start;
+                        width: fit-content;
+                        height: fit-content;
+                    }
+                    label div{
+                        #cajaServicioDesc{
+                            font-family: 'Kanit', sans-serif;
+                            font-weight: 100;
+                            font-size: 24px;
+                            width: 90%;
+                            line-height: 1.8rem;
+                            color: $celeste;
+                            overflow: hidden;
+                            max-height: 0;
+                            transition: all 1s;
+                            animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+                            animation-duration: 2s;
+                        }
+                    }
+                    #btnDiseño{
+                        display: none;
+                        &:checked + label > div div {
+                            overflow: hidden;
+                            max-height: 200px;
+                            transition: all 1s;
+                            animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+                            animation-duration: 2s;
+                        }
+                    }
+                    #btnRrss{
+                        display: none;
+                        &:checked + label > div div {
+                            overflow: hidden;
+                            max-height: 200px;
+                            transition: all 1s;
+                            animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+                            animation-duration: 2s;
+                        }
+                    }
+                    #btnWeb{
+                        display: none;
+                        &:checked + label > div div {
+                            overflow: hidden;
+                            max-height: 200px;
+                            transition: all 1s;
+                            animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+                            animation-duration: 2s;
+                        }
+                    }
+                }
+                .cajaServicioMas{
+                    align-items: flex-start;
+                    width: 40px;
+                    height: 100%;
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.gridIndex{
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 800px auto;
+    grid-template-areas: 
+    "header header"
+    "bienvenida carrusel"
+    "footer footer"
+    ;
+    .header{
+        grid-area: header;
+        width: 100%;
+    }
+    .bienvenida{
+        grid-area: bienvenida;
+        margin-top: 140px;
+        margin-bottom: 140px;
+        animation-name: bienvenida_index;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        @keyframes bienvenida_index {
+            0% {opacity: 0;
+            margin-top: 200px;}
+            100% {opacity: 1;}
+        }
+        .bienvenidaCaja{
+            .bienvenidaSaludo{
+                display: flex;
+                .bienvenidaSaludoEmoji{
+                    position: relative;
+                    bottom: 80px; left: 20px;
+                    animation-name: bienvenidaSaludoEmoji;
+                    animation-timing-function: cubic-bezier(.91,-0.56,.37,1.65);
+                    animation-duration: 2s;
+                    transform-origin: left bottom;
+                    @keyframes bienvenidaSaludoEmoji{
+                        0%{
+                            transform: scale(0.10);
+                            opacity: 0;
+                            transform: rotate(40deg);
+                        }
+                        100%{
+                            transform: rotate(deg);
+                        }
+                    }
+                }
+            }
+            .bienvenidaDesc{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .bienvenidaButtonCaja{
+                display: flex;
+                justify-content: start;
+                .bienvenidaButton{
+                    justify-content: center;
+                    background: $celeste_light;
+                    width: min-content;
+                    border-radius: 12px;
+                    padding: 20px 60px 20px 60px;
+                    & a{
+                        text-decoration-line: none;
+                        font-family: 'Epilogue', sans-serif;
+                        font-size: 32px;
+                        font-weight: 800;
+                        font-variant: small-caps;
+                        letter-spacing: 2px;
+                        color: $azul_dark;
+                    }
+                }
+            }
+        }
+    }
+    .carrusel{
+        justify-self: end;
+        align-self: center;
+        grid-area: carrusel;
+        img{
+            width: 100%;
+        }
+    }
+}
