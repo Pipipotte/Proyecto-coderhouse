@@ -48,6 +48,16 @@ ESTILO DEL PORTFOLIO
                         }
                     }
                 }
+                &.navMobile{
+                    .ulMobile{
+                        .navPortfolio{
+                            background-color: $azul_dark;
+                            a{
+                                color: white;
+                            }
+                        }
+                    }
+                }
             }
         }
         .mainPortfolio{

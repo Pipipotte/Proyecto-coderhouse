@@ -122,15 +122,8 @@ EMPIEZA EL MEDIA QUERIES DE INDEX
         "footer"
         ;
         .header{
-            margin-top: 20px;
-            margin-bottom: 40px;
-            .logoVariant2{
-                transform: scale(0.7);
+            @include headerNavMobileMQ480
             }
-            .menúMobile>img{
-                transform: scale(0.7);
-            }
-        }
         .bienvenida{
             text-align: center;
             grid-area: bienvenida;
@@ -310,15 +303,8 @@ EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
             "footer"
             ;
             .header{
-                margin-top: 20px;
-                margin-bottom: 40px;
-                .logoVariant2{
-                    transform: scale(0.7);
+                @include headerNavMobileMQ480
                 }
-                .menúMobile>img{
-                    transform: scale(0.7);
-                }
-            }
             .mainPortfolio{
                 .cajasPortfolio{
                     padding: 16px;
@@ -539,15 +525,8 @@ EMPIEZA EL MEDIA QUERIES DE SERVICIOS
 @media screen and (max-width:480px){
     .gridServicios{
         .header{
-            margin-top: 20px;
-            margin-bottom: 40px;
-            .logoVariant2{
-                transform: scale(0.7);
+            @include headerNavMobileMQ480
             }
-            .menúMobile>img{
-                transform: scale(0.7);
-            }
-        }
         .mainServicios{
             .servicios{
                 .cajaServicios{
@@ -655,15 +634,8 @@ EMPIEZA EL MEDIA QUERIES DE NOSOTROS
 @media screen and (max-width:480px){
     .gridNosotros{
         .header{
-            margin-top: 20px;
-            margin-bottom: 40px;
-            .logoVariant2{
-                transform: scale(0.7);
+            @include headerNavMobileMQ480
             }
-            .menúMobile>img{
-                transform: scale(0.7);
-            }
-        }
         .footer{
             margin-top: 50px;
             margin-bottom: 20px;
@@ -720,15 +692,8 @@ EMPIEZA EL MEDIA QUERIES DE CONTACTO
 @media screen and (max-width:480px){
     .gridContacto{
         .header{
-            margin-top: 20px;
-            margin-bottom: 40px;
-            .logoVariant2{
-                transform: scale(0.7);
+            @include headerNavMobileMQ480
             }
-            .menúMobile>img{
-                transform: scale(0.7);
-            }
-        }
         .footer{
             @include footerMQ480
         }

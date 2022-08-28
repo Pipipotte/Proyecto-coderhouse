@@ -47,6 +47,16 @@ ESTILO DE CONTACTO
                     }
                 }
             }
+            &.navMobile{
+                .ulMobile{
+                    .navContacto{
+                        background-color: $azul_dark;
+                        a{
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
     }
     .mainContacto{

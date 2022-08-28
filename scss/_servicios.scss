@@ -47,6 +47,16 @@ ESTILO DE SERVICIOS
                     }
                 }
             }
+            &.navMobile{
+                .ulMobile{
+                    .navServicios{
+                        background-color: $azul_dark;
+                        a{
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
     }
     .mainServicios{

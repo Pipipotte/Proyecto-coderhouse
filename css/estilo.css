@@ -110,6 +110,81 @@ header {
           header nav.navDesktop ul li a:active {
             color: #4B6D85;
             font-weight: 800; }
+    header nav.navMobile .ulMobile {
+      position: absolute;
+      top: 80px;
+      right: 3.5rem;
+      z-index: 1;
+      border-radius: 10px;
+      background-color: #E9FBFF;
+      list-style: none;
+      font-family: 'Epilogue', sans-serif;
+      font-size: 20px;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      padding: 10px 8px 10px 8px;
+      transition: all 0.5s;
+      animation-timing-function: ease;
+      animation-duration: 0.6s;
+      animation-name: ulMobile; }
+      header nav.navMobile .ulMobile li {
+        padding: 4px 10px 4px 10px;
+        text-align: end;
+        border-radius: 10%; }
+        header nav.navMobile .ulMobile li a:active {
+          color: #4B6D85;
+          font-weight: 800; }
+
+@keyframes burgerAbrir {
+  0% {
+    transform: scale(0.2); }
+  100% {
+    transform: scale(1); } }
+    header nav.navMobile .burgerCerrar {
+      display: none;
+      transform: scale(0.2); }
+    header nav.navMobile .burgerAbrir {
+      animation-duration: 0.1s;
+      animation-name: burgerAbrir; }
+
+@keyframes burgerAbrir {
+  0% {
+    transform: scale(0.2); }
+  100% {
+    transform: scale(1); } }
+    header nav.navMobile .navMobileShower {
+      display: none; }
+      header nav.navMobile .navMobileShower:checked ~ .ulMobile {
+        display: block; }
+
+@keyframes ulMobile {
+  0% {
+    transform-origin: 100% 0%;
+    transform: scale(0.2); }
+  100% {
+    transform: scale(1); } }
+      header nav.navMobile .navMobileShower:checked ~ .navMobile .burgerAbrir {
+        display: none;
+        animation-duration: 0.1s;
+        animation-name: burgerAbrir;
+        animation-timing-function: cubic-bezier(0.91, -0.56, 0.37, 1.65); }
+
+@keyframes burgerAbrir {
+  0% {
+    transform: scale(0.2); }
+  100% {
+    transform: scale(1); } }
+      header nav.navMobile .navMobileShower:checked ~ .navMobile .burgerCerrar {
+        display: block;
+        transform: scale(1);
+        animation-duration: 0.1s;
+        animation-name: burgerCerrar; }
+
+@keyframes burgerCerrar {
+  0% {
+    transform: scale(0.2); }
+  100% {
+    transform: scale(1); } }
 
 footer {
   margin-top: 50px;
@@ -270,6 +345,10 @@ ESTILO DEL PORTFOLIO
     background-color: white; }
   100% {
     background-color: #B2F2FF; } }
+    .bodyPortfolio .gridPortfolio .header nav.navMobile .ulMobile .navPortfolio {
+      background-color: #4B6D85; }
+      .bodyPortfolio .gridPortfolio .header nav.navMobile .ulMobile .navPortfolio a {
+        color: white; }
   .bodyPortfolio .gridPortfolio .mainPortfolio {
     grid-area: mainPortfolio;
     display: block; }
@@ -438,6 +517,10 @@ ESTILO DE SERVICIOS
     background-color: white; }
   100% {
     background-color: #B2F2FF; } }
+    .gridServicios .header nav.navMobile .ulMobile .navServicios {
+      background-color: #4B6D85; }
+      .gridServicios .header nav.navMobile .ulMobile .navServicios a {
+        color: white; }
   .gridServicios .mainServicios {
     display: flex;
     flex-direction: column;
@@ -569,6 +652,10 @@ ESTILO DE NOSOTROS
     background-color: white; }
   100% {
     background-color: #B2F2FF; } }
+    .gridNosotros .header nav.navMobile .ulMobile .navNosotros {
+      background-color: #4B6D85; }
+      .gridNosotros .header nav.navMobile .ulMobile .navNosotros a {
+        color: white; }
 
 /********************************************
 ESTILO DE CONTACTO
@@ -606,6 +693,10 @@ ESTILO DE CONTACTO
     background-color: white; }
   100% {
     background-color: #B2F2FF; } }
+    .gridContacto .header nav.navMobile .ulMobile .navContacto {
+      background-color: #4B6D85; }
+      .gridContacto .header nav.navMobile .ulMobile .navContacto a {
+        color: white; }
   .gridContacto .mainContacto {
     width: 100%;
     grid-area: mainContacto; }
@@ -830,7 +921,20 @@ EMPIEZA EL MEDIA QUERIES DE INDEX
       margin-bottom: 40px; }
       .gridIndex .header .logoVariant2 {
         transform: scale(0.7); }
-      .gridIndex .header .menúMobile > img {
+      .gridIndex .header .navMobile .ulMobile {
+        top: 80px;
+        right: 1.7rem; }
+      .gridIndex .header .navMobile .navMobileShower:checked ~ .navMobile .burgerCerrar {
+        display: block;
+        transform: scale(0.7);
+        animation-duration: 0.1s;
+        animation-name: burgerCerrar; }
+  @keyframes burgerCerrar {
+    0% {
+      transform: scale(0.2); }
+    100% {
+      transform: scale(0.7); } }
+      .gridIndex .header .navMobile > img {
         transform: scale(0.7); }
     .gridIndex .bienvenida {
       text-align: center;
@@ -957,7 +1061,20 @@ EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
       margin-bottom: 40px; }
       .bodyPortfolio .gridPortfolio .header .logoVariant2 {
         transform: scale(0.7); }
-      .bodyPortfolio .gridPortfolio .header .menúMobile > img {
+      .bodyPortfolio .gridPortfolio .header .navMobile .ulMobile {
+        top: 80px;
+        right: 1.7rem; }
+      .bodyPortfolio .gridPortfolio .header .navMobile .navMobileShower:checked ~ .navMobile .burgerCerrar {
+        display: block;
+        transform: scale(0.7);
+        animation-duration: 0.1s;
+        animation-name: burgerCerrar; }
+  @keyframes burgerCerrar {
+    0% {
+      transform: scale(0.2); }
+    100% {
+      transform: scale(0.7); } }
+      .bodyPortfolio .gridPortfolio .header .navMobile > img {
         transform: scale(0.7); }
     .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio {
       padding: 16px;
@@ -1111,7 +1228,20 @@ EMPIEZA EL MEDIA QUERIES DE SERVICIOS
     margin-bottom: 40px; }
     .gridServicios .header .logoVariant2 {
       transform: scale(0.7); }
-    .gridServicios .header .menúMobile > img {
+    .gridServicios .header .navMobile .ulMobile {
+      top: 80px;
+      right: 1.7rem; }
+    .gridServicios .header .navMobile .navMobileShower:checked ~ .navMobile .burgerCerrar {
+      display: block;
+      transform: scale(0.7);
+      animation-duration: 0.1s;
+      animation-name: burgerCerrar; }
+  @keyframes burgerCerrar {
+    0% {
+      transform: scale(0.2); }
+    100% {
+      transform: scale(0.7); } }
+    .gridServicios .header .navMobile > img {
       transform: scale(0.7); }
   .gridServicios .mainServicios .servicios .cajaServicios .cajaServicioSvg {
     justify-content: center;
@@ -1201,7 +1331,20 @@ EMPIEZA EL MEDIA QUERIES DE NOSOTROS
     margin-bottom: 40px; }
     .gridNosotros .header .logoVariant2 {
       transform: scale(0.7); }
-    .gridNosotros .header .menúMobile > img {
+    .gridNosotros .header .navMobile .ulMobile {
+      top: 80px;
+      right: 1.7rem; }
+    .gridNosotros .header .navMobile .navMobileShower:checked ~ .navMobile .burgerCerrar {
+      display: block;
+      transform: scale(0.7);
+      animation-duration: 0.1s;
+      animation-name: burgerCerrar; }
+  @keyframes burgerCerrar {
+    0% {
+      transform: scale(0.2); }
+    100% {
+      transform: scale(0.7); } }
+    .gridNosotros .header .navMobile > img {
       transform: scale(0.7); }
   .gridNosotros .footer {
     margin-top: 50px;
@@ -1244,7 +1387,20 @@ EMPIEZA EL MEDIA QUERIES DE CONTACTO
     margin-bottom: 40px; }
     .gridContacto .header .logoVariant2 {
       transform: scale(0.7); }
-    .gridContacto .header .menúMobile > img {
+    .gridContacto .header .navMobile .ulMobile {
+      top: 80px;
+      right: 1.7rem; }
+    .gridContacto .header .navMobile .navMobileShower:checked ~ .navMobile .burgerCerrar {
+      display: block;
+      transform: scale(0.7);
+      animation-duration: 0.1s;
+      animation-name: burgerCerrar; }
+  @keyframes burgerCerrar {
+    0% {
+      transform: scale(0.2); }
+    100% {
+      transform: scale(0.7); } }
+    .gridContacto .header .navMobile > img {
       transform: scale(0.7); }
   .gridContacto .footer {
     margin-top: 50px;

@@ -47,6 +47,16 @@ ESTILO DE NOSOTROS
                     }
                 }
             }
+            &.navMobile{
+                .ulMobile{
+                    .navNosotros{
+                        background-color: $azul_dark;
+                        a{
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
     }
 }

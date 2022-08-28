@@ -7,10 +7,11 @@
     <title>Estudio de diseño</title>
     <link rel="shortcut icon" href="./media/icon.svg">
     <link rel="stylesheet" href="css/estilo.css">
+        <!---SEO-->
     <meta name="description" content="Somos Ele Studio y contribuimos
     con negocios, organizaciones con y sin fines de lucro a crear sus identidades visuales y los ayudamos a comunicar de manera exitosa su marca en redes sociales ">
     <meta name="keywords" content="estudio, diseño, marketing, RRSS, community manager, logo, diseño gráfico, páginas webs, diseño de páginas webs, campañas de marketing, estrategia de marketing">
-
+    <!---TIPOGRAFÍAS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-
+    <!---VIEWPORT-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -44,9 +45,11 @@
                 </ul>
             </nav>
             <nav class="navMobile">
-                <div class="menúMobile">
-                    <img src="./media/icon menu.svg" alt="menú">
-                </div>
+                <input type="checkbox" id="navMobileShower" class="navMobileShower">
+                <label for="navMobileShower" class="navMobile">
+                    <img class="burgerAbrir" src="./media/icon menu.svg" alt="abrir menú">
+                    <img class="burgerCerrar" src="./media/icon-menu-equis.svg" alt="cerrar menú">
+                </label>
                 <ul class="ulMobile">
                     <li><a href="./portfolio.html">portfolio</a></li>
                     <li><a href="./servicios.html">servicios</a></li>
@@ -84,8 +87,8 @@
 
         <section class="carrusel">
             <section> <!---Cada imágen del carrusel de trabajos realizados llevará a la sección de portfolio al hacerles click, revisar wireframe para entenderlo mejor-->
-                <a class="carruselGifDesktop" href="./portfolio.html#cliente1"><img src="./media/idx-gif.gif" alt="cliente uno"></a>
-                <a class="carruselGifMobile" href="./portfolio.html#cliente1"><img src="./media/carrusel-gif-mobile.gif" alt="cliente uno"></a>
+                <a class="carruselGifDesktop" href="./portfolio.html"><img src="./media/idx-gif.gif" alt="cliente uno"></a>
+                <a class="carruselGifMobile" href="./portfolio.html"><img src="./media/carrusel-gif-mobile.gif" alt="cliente uno"></a>
             </section>
         </section> <!---Hacerle click a un trabajo específico te lleva al cliente correspondiente en portfolio-->
 
