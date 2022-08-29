@@ -1,7 +1,7 @@
 {
-  "name": "clear",
+  "name": "Proyecto Coderhouse - Estudio de diseño - Joaquín Avilés",
   "version": "1.0.0",
-  "description": "",
+  "description": "Esta página la hice para el proyecto de Coderhouse, donde desarrollo la web de un estudio de diseño y markeging digital.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
