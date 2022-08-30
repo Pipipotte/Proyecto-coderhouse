@@ -302,6 +302,8 @@ footer {
           font-variant: small-caps;
           letter-spacing: 2px;
           color: #4B6D85; }
+        .gridIndex .bienvenida .bienvenidaCaja .bienvenidaButtonCaja .bienvenidaButton:hover {
+          cursor: pointer; }
   .gridIndex .carrusel {
     justify-self: end;
     align-self: center;
