@@ -718,16 +718,69 @@ ESTILO DE NOSOTROS
           border-bottom-right-radius: 10px; }
           .gridNosotros .mainNosotros .sectionNosotros .cardMobile .nosotrosCardRedesMobile img {
             transform: scale(1.2); }
+      .gridNosotros .mainNosotros .sectionNosotros #cardAgos {
+        animation-delay: 0s;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.78, 0.1, 0.24, 0.9);
+        animation-name: cardAgos; }
+
+@keyframes cardAgos {
+  0% {
+    opacity: 0;
+    margin-top: 100px; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+      .gridNosotros .mainNosotros .sectionNosotros #cardRodri {
+        animation-delay: 0s;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.78, 0.1, 0.24, 0.9);
+        animation-name: cardAgos; }
+
+@keyframes cardAgos {
+  0% {
+    opacity: 0;
+    margin-top: 100px; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+      .gridNosotros .mainNosotros .sectionNosotros #cardJoa {
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+        animation-timing-function: cubic-bezier(0.78, 0.1, 0.24, 0.9);
+        animation-name: cardAgos; }
+
+@keyframes cardAgos {
+  0% {
+    opacity: 0;
+    margin-top: 100px; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
     .gridNosotros .mainNosotros .nosotrosCita {
       display: flex;
       width: 100%;
       gap: 2rem;
-      margin: 4rem 0rem 4rem 0rem; }
+      margin: 4rem 0rem 4rem 0rem;
+      animation-delay: 0s;
+      animation-duration: 1.5s;
+      animation-timing-function: cubic-bezier(0.78, 0.1, 0.24, 0.9);
+      animation-name: nosotrosCita; }
       .gridNosotros .mainNosotros .nosotrosCita .card {
         border: 2px solid #B2F2FF; }
         .gridNosotros .mainNosotros .nosotrosCita .card .card-header {
           background-color: #E9FBFF;
           border-bottom: 2px #B2F2FF; }
+
+@keyframes nosotrosCita {
+  0% {
+    opacity: 0;
+    margin-top: 100px; }
+  100% {
+    opacity: 1; } }
 
 /********************************************
 ESTILO DE CONTACTO

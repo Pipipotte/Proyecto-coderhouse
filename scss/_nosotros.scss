@@ -120,6 +120,42 @@ ESTILO DE NOSOTROS
                     border-bottom-right-radius: 10px;
                 }
             }
+            #cardAgos{
+                animation-delay: 0s;
+                animation-duration: 1.5s;
+                animation-timing-function: cubic-bezier(.78,.1,.24,.9);
+                animation-name: cardAgos;
+                @keyframes cardAgos {
+                    0% {opacity: 0;
+                        margin-top: 100px;}
+                    50% {opacity: 0;}
+                    100% {opacity: 1;}
+                    }
+            }
+            #cardRodri{
+                animation-delay: 0s;
+                animation-duration: 2s;
+                animation-timing-function: cubic-bezier(.78,.1,.24,.9);
+                animation-name: cardAgos;
+                @keyframes cardAgos {
+                    0% {opacity: 0;
+                        margin-top: 100px;}
+                    50% {opacity: 0;}
+                    100% {opacity: 1;}
+                    }
+            }
+            #cardJoa{
+                animation-delay: 0s;
+                animation-duration: 2.5s;
+                animation-timing-function: cubic-bezier(.78,.1,.24,.9);
+                animation-name: cardAgos;
+                @keyframes cardAgos {
+                    0% {opacity: 0;
+                        margin-top: 100px;}
+                    50% {opacity: 0;}
+                    100% {opacity: 1;}
+                    }
+            }
         }
         .nosotrosCita{
             display: flex;
@@ -133,6 +169,15 @@ ESTILO DE NOSOTROS
                     border-bottom: 2px $celeste_light;
                 }
             }
+            animation-delay: 0s;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(.78,.1,.24,.9);
+            animation-name: nosotrosCita;
+            @keyframes nosotrosCita {
+                0% {opacity: 0;
+                    margin-top: 100px;}
+                100% {opacity: 1;}
+                }
         }
     }
 }
