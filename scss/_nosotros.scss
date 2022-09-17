@@ -59,4 +59,80 @@ ESTILO DE NOSOTROS
             }
         }
     }
+    .mainNosotros{
+        width: 100%;
+        padding: 0px 100px 0px 100px;
+        .sectionNosotros{
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin: 4rem 0rem 4rem 0rem;
+            .cardMobile{
+                width: 33%;
+                height: auto;
+                .card{
+                    height: 100%;
+                    border: 0px;
+                    .card-body{
+                        border-left: 2px solid $celeste_light;
+                        border-right: 2px solid $celeste_light;
+                        display: block;
+                        height: fit-content;
+                        align-content: center;
+                        .cardSubtitulo{
+                            gap: 0.5rem;
+                            display: flex;
+                        }
+                    }
+                    .nosotrosCardRedes{
+                        display: flex;
+                        background-color: $celeste_light3;
+                        padding: 1rem;
+                        justify-content: center;
+                        align-items: flex-end;
+                        display: flex;
+                        gap: 2rem;
+                        img{
+                            transform: scale(1.2);
+                        }
+                        border-left: 2px solid $celeste_light;
+                        border-right: 2px solid $celeste_light;
+                        border-bottom: 2px solid $celeste_light;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+                .nosotrosCardRedesMobile{
+                    display: flex;
+                    background-color: $celeste_light3;
+                    padding: 1rem;
+                    justify-content: center;
+                    align-items: flex-end;
+                    display: flex;
+                    gap: 2rem;
+                    img{
+                        transform: scale(1.2);
+                    }
+                    border-left: 2px solid $celeste_light;
+                    border-right: 2px solid $celeste_light;
+                    border-bottom: 2px solid $celeste_light;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+        }
+        .nosotrosCita{
+            display: flex;
+            width: 100%;
+            gap: 2rem;
+            margin: 4rem 0rem 4rem 0rem;
+            .card{
+                border: 2px solid $celeste_light;
+                .card-header{
+                    background-color: $celeste_light3;
+                    border-bottom: 2px $celeste_light;
+                }
+            }
+        }
+    }
 }

@@ -55,6 +55,12 @@ h6 {
   letter-spacing: 4%;
   color: #4B6D85; }
 
+h7 {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  color: #4B6D85; }
+
 .displayNone {
   display: none; }
 
@@ -305,7 +311,8 @@ footer {
   .gridIndex .carrusel {
     justify-self: end;
     align-self: center;
-    grid-area: carrusel; }
+    grid-area: carrusel;
+    pointer-events: none; }
     .gridIndex .carrusel img {
       width: 100%; }
 
@@ -656,6 +663,69 @@ ESTILO DE NOSOTROS
       background-color: #4B6D85; }
       .gridNosotros .header nav.navMobile .ulMobile .navNosotros a {
         color: white; }
+  .gridNosotros .mainNosotros {
+    width: 100%;
+    padding: 0px 100px 0px 100px; }
+    .gridNosotros .mainNosotros .sectionNosotros {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      margin: 4rem 0rem 4rem 0rem; }
+      .gridNosotros .mainNosotros .sectionNosotros .cardMobile {
+        width: 33%;
+        height: auto; }
+        .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card {
+          height: 100%;
+          border: 0px; }
+          .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card .card-body {
+            border-left: 2px solid #B2F2FF;
+            border-right: 2px solid #B2F2FF;
+            display: block;
+            height: fit-content;
+            align-content: center; }
+            .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card .card-body .cardSubtitulo {
+              gap: 0.5rem;
+              display: flex; }
+          .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card .nosotrosCardRedes {
+            display: flex;
+            background-color: #E9FBFF;
+            padding: 1rem;
+            justify-content: center;
+            align-items: flex-end;
+            display: flex;
+            gap: 2rem;
+            border-left: 2px solid #B2F2FF;
+            border-right: 2px solid #B2F2FF;
+            border-bottom: 2px solid #B2F2FF;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px; }
+            .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card .nosotrosCardRedes img {
+              transform: scale(1.2); }
+        .gridNosotros .mainNosotros .sectionNosotros .cardMobile .nosotrosCardRedesMobile {
+          display: flex;
+          background-color: #E9FBFF;
+          padding: 1rem;
+          justify-content: center;
+          align-items: flex-end;
+          display: flex;
+          gap: 2rem;
+          border-left: 2px solid #B2F2FF;
+          border-right: 2px solid #B2F2FF;
+          border-bottom: 2px solid #B2F2FF;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px; }
+          .gridNosotros .mainNosotros .sectionNosotros .cardMobile .nosotrosCardRedesMobile img {
+            transform: scale(1.2); }
+    .gridNosotros .mainNosotros .nosotrosCita {
+      display: flex;
+      width: 100%;
+      gap: 2rem;
+      margin: 4rem 0rem 4rem 0rem; }
+      .gridNosotros .mainNosotros .nosotrosCita .card {
+        border: 2px solid #B2F2FF; }
+        .gridNosotros .mainNosotros .nosotrosCita .card .card-header {
+          background-color: #E9FBFF;
+          border-bottom: 2px #B2F2FF; }
 
 /********************************************
 ESTILO DE CONTACTO
@@ -941,11 +1011,11 @@ EMPIEZA EL MEDIA QUERIES DE INDEX
       grid-area: bienvenida;
       margin-top: 40px;
       margin-bottom: 40px; }
-      .gridIndex .bienvenida .bienvenidaCaja > h1 {
-        font-size: 4em; }
       .gridIndex .bienvenida .bienvenidaCaja .bienvenidaSaludo {
         display: flex;
         flex-direction: column-reverse; }
+        .gridIndex .bienvenida .bienvenidaCaja .bienvenidaSaludo h7 {
+          font-size: 5em; }
         .gridIndex .bienvenida .bienvenidaCaja .bienvenidaSaludo .bienvenidaSaludoEmoji {
           position: relative;
           bottom: 0px;
@@ -1306,6 +1376,10 @@ TERMINA EL MEDIA QUERIES DEL SERVICIOS
 /********************************************
 EMPIEZA EL MEDIA QUERIES DE NOSOTROS
 *********************************************/
+@media screen and (min-width: 1024px) {
+  .gridNosotros .mainNosotros .sectionNosotros .cardMobile .nosotrosCardRedesMobile {
+    display: none; } }
+
 @media screen and (max-width: 1023px) {
   .gridNosotros .header {
     margin-top: 20px;
@@ -1319,11 +1393,109 @@ EMPIEZA EL MEDIA QUERIES DE NOSOTROS
       display: none; }
     .gridNosotros .header .navMobile {
       width: fit-content; }
+  .gridNosotros .mainNosotros {
+    width: 100%;
+    padding: 0px 0px 0px 0px; }
+    .gridNosotros .mainNosotros .sectionNosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 2rem;
+      margin: 4rem 0rem 4rem 0rem; }
+      .gridNosotros .mainNosotros .sectionNosotros .cardMobile {
+        width: 100%;
+        height: auto; }
+        .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card {
+          display: flex;
+          flex-direction: row;
+          height: fit-content;
+          border: 0px;
+          border-right: 2px solid #B2F2FF;
+          border-left: 2px solid #B2F2FF;
+          border-top: 2px solid #B2F2FF;
+          border-bottom-right-radius: 0px; }
+          .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card img {
+            width: 30%;
+            object-fit: cover; }
+          .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card .card-body {
+            border-left: 0px;
+            border-right: 0px;
+            display: block;
+            height: fit-content;
+            align-content: center; }
+            .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card .card-body .cardSubtitulo {
+              gap: 0.5rem;
+              display: flex; }
+          .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card .nosotrosCardRedes {
+            display: none; }
+        .gridNosotros .mainNosotros .sectionNosotros .cardMobile .nosotrosCardRedesMobile {
+          display: flex;
+          background-color: #E9FBFF;
+          padding: 1rem;
+          justify-content: center;
+          align-items: flex-end;
+          display: flex;
+          gap: 2rem;
+          border-left: 2px solid #B2F2FF;
+          border-right: 2px solid #B2F2FF;
+          border-bottom: 2px solid #B2F2FF;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px; }
+          .gridNosotros .mainNosotros .sectionNosotros .cardMobile .nosotrosCardRedesMobile img {
+            transform: scale(1.2); }
+    .gridNosotros .mainNosotros .nosotrosCita {
+      display: flex;
+      width: 100%;
+      gap: 2rem;
+      margin: 4rem 0rem 4rem 0rem; }
+      .gridNosotros .mainNosotros .nosotrosCita .card {
+        border: 2px solid #B2F2FF; }
+        .gridNosotros .mainNosotros .nosotrosCita .card .card-header {
+          background-color: #E9FBFF;
+          border-bottom: 2px #B2F2FF; }
   .gridNosotros .footer {
     margin-top: 50px;
     margin-bottom: 20px; }
     .gridNosotros .footer .footerNav .navDesktop {
       display: none; } }
+
+@media screen and (max-width: 700px) {
+  .gridNosotros .mainNosotros {
+    width: 100%; }
+    .gridNosotros .mainNosotros .sectionNosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 4rem;
+      margin: 4rem 0rem 4rem 0rem; }
+      .gridNosotros .mainNosotros .sectionNosotros .cardMobile {
+        width: 100%;
+        height: auto; }
+        .gridNosotros .mainNosotros .sectionNosotros .cardMobile .nosotrosCardRedesMobile {
+          display: flex;
+          background-color: #E9FBFF;
+          padding: 1rem;
+          justify-content: center;
+          align-items: flex-end;
+          display: flex;
+          gap: 3rem;
+          border-left: 2px solid #B2F2FF;
+          border-right: 2px solid #B2F2FF;
+          border-bottom: 2px solid #B2F2FF;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px; }
+          .gridNosotros .mainNosotros .sectionNosotros .cardMobile .nosotrosCardRedesMobile img {
+            transform: scale(1.2); }
+    .gridNosotros .mainNosotros .nosotrosCita {
+      flex-direction: column;
+      width: 100%;
+      gap: 2rem;
+      margin: 4rem 0rem 4rem 0rem; }
+      .gridNosotros .mainNosotros .nosotrosCita .card {
+        border: 2px solid #B2F2FF; }
+        .gridNosotros .mainNosotros .nosotrosCita .card .card-header {
+          background-color: #E9FBFF;
+          border-bottom: 2px #B2F2FF; } }
 
 @media screen and (max-width: 480px) {
   .gridNosotros .header {
@@ -1346,6 +1518,47 @@ EMPIEZA EL MEDIA QUERIES DE NOSOTROS
       transform: scale(0.7); } }
     .gridNosotros .header .navMobile > img {
       transform: scale(0.7); }
+  .gridNosotros .mainNosotros {
+    width: 100%;
+    padding: 0px 0px 0px 0px; }
+    .gridNosotros .mainNosotros .sectionNosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 2rem;
+      margin: 4rem 0rem 4rem 0rem; }
+      .gridNosotros .mainNosotros .sectionNosotros .cardMobile {
+        width: 100%;
+        height: auto; }
+        .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card .card-body p {
+          font-size: 0.9rem; }
+        .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card .card-body .cardSubtitulo {
+          gap: 0.5rem;
+          display: flex; }
+        .gridNosotros .mainNosotros .sectionNosotros .cardMobile .card .nosotrosCardRedes {
+          display: none; }
+        .gridNosotros .mainNosotros .sectionNosotros .cardMobile .nosotrosCardRedesMobile {
+          display: flex;
+          background-color: #E9FBFF;
+          padding: 1rem;
+          justify-content: center;
+          align-items: flex-end;
+          display: flex;
+          gap: 2rem;
+          border-left: 2px solid #B2F2FF;
+          border-right: 2px solid #B2F2FF;
+          border-bottom: 2px solid #B2F2FF;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px; }
+          .gridNosotros .mainNosotros .sectionNosotros .cardMobile .nosotrosCardRedesMobile img {
+            transform: scale(0.8); }
+    .gridNosotros .mainNosotros .nosotrosCita {
+      display: flex;
+      width: 100%;
+      gap: 2rem;
+      margin: 2rem 0rem 2rem 0rem; }
+      .gridNosotros .mainNosotros .nosotrosCita .card .card-body p {
+        font-size: 0.9rem; }
   .gridNosotros .footer {
     margin-top: 50px;
     margin-bottom: 20px; }

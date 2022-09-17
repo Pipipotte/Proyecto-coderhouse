@@ -130,10 +130,10 @@ EMPIEZA EL MEDIA QUERIES DE INDEX
             margin-top: 40px;
             margin-bottom: 40px;
             .bienvenidaCaja{
-                >h1{
-                    font-size: 4em;
-                }
                 .bienvenidaSaludo{
+                    h7{
+                        font-size: 5em;
+                    }
                     display: flex;
                     flex-direction: column-reverse;
                     .bienvenidaSaludoEmoji{
@@ -601,6 +601,19 @@ TERMINA EL MEDIA QUERIES DEL SERVICIOS
 /********************************************
 EMPIEZA EL MEDIA QUERIES DE NOSOTROS
 *********************************************/
+@media screen and (min-width:1024px){
+    .gridNosotros{
+        .mainNosotros{
+            .sectionNosotros{
+                .cardMobile{
+                    .nosotrosCardRedesMobile{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:1023px){
     .gridNosotros{
         .header{
@@ -620,6 +633,79 @@ EMPIEZA EL MEDIA QUERIES DE NOSOTROS
                 width: fit-content;
             }
         }
+        .mainNosotros{
+            width: 100%;
+            padding: 0px 0px 0px 0px;
+            .sectionNosotros{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 2rem;
+                margin: 4rem 0rem 4rem 0rem;
+                .cardMobile{
+                    width: 100%;
+                    height: auto;
+                    .card{
+                        display: flex;
+                        flex-direction: row;
+                        height: fit-content;
+                        border: 0px;
+                        border-right: 2px solid $celeste_light;
+                        border-left: 2px solid $celeste_light;
+                        border-top: 2px solid $celeste_light;
+                        border-bottom-right-radius: 0px;
+                        img{
+                            width: 30%;
+                            object-fit: cover;
+                        }
+                        .card-body{
+                            border-left: 0px;
+                            border-right: 0px;
+                            display: block;
+                            height: fit-content;
+                            align-content: center;
+                            .cardSubtitulo{
+                                gap: 0.5rem;
+                                display: flex;
+                            }
+                        }
+                        .nosotrosCardRedes{
+                            display: none;
+                        }
+                    }
+                    .nosotrosCardRedesMobile{
+                        display: flex;
+                        background-color: $celeste_light3;
+                        padding: 1rem;
+                        justify-content: center;
+                        align-items: flex-end;
+                        display: flex;
+                        gap: 2rem;
+                        img{
+                            transform: scale(1.2);
+                        }
+                        border-left: 2px solid $celeste_light;
+                        border-right: 2px solid $celeste_light;
+                        border-bottom: 2px solid $celeste_light;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+            .nosotrosCita{
+                display: flex;
+                width: 100%;
+                gap: 2rem;
+                margin: 4rem 0rem 4rem 0rem;
+                .card{
+                    border: 2px solid $celeste_light;
+                    .card-header{
+                        background-color: $celeste_light3;
+                        border-bottom: 2px $celeste_light;
+                    }
+                }
+            }
+        }
         .footer{
             margin-top: 50px;
             margin-bottom: 20px;
@@ -631,25 +717,121 @@ EMPIEZA EL MEDIA QUERIES DE NOSOTROS
         }
     }
 }
+@media screen and (max-width:700px){
+    .gridNosotros{
+        .mainNosotros{
+            width: 100%;
+            .sectionNosotros{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 4rem;
+                margin: 4rem 0rem 4rem 0rem;
+                .cardMobile{
+                    width: 100%;
+                    height: auto;
+                    .nosotrosCardRedesMobile{
+                        display: flex;
+                        background-color: $celeste_light3;
+                        padding: 1rem;
+                        justify-content: center;
+                        align-items: flex-end;
+                        display: flex;
+                        gap: 3rem;
+                        img{
+                            transform: scale(1.2);
+                        }
+                        border-left: 2px solid $celeste_light;
+                        border-right: 2px solid $celeste_light;
+                        border-bottom: 2px solid $celeste_light;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+            .nosotrosCita{
+                flex-direction: column;
+                width: 100%;
+                gap: 2rem;
+                margin: 4rem 0rem 4rem 0rem;
+                .card{
+                    border: 2px solid $celeste_light;
+                    .card-header{
+                        background-color: $celeste_light3;
+                        border-bottom: 2px $celeste_light;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:480px){
     .gridNosotros{
         .header{
             @include headerNavMobileMQ480
             }
+        .mainNosotros{
+            width: 100%;
+            padding: 0px 0px 0px 0px;
+            .sectionNosotros{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 2rem;
+                margin: 4rem 0rem 4rem 0rem;
+                .cardMobile{
+                    width: 100%;
+                    height: auto;
+                    .card{
+                        .card-body{
+                            p{
+                                font-size: 0.9rem;
+                            }
+                            .cardSubtitulo{
+                                gap: 0.5rem;
+                                display: flex;
+                            }
+                        }
+                        .nosotrosCardRedes{
+                            display: none;
+                        }
+                    }
+                    .nosotrosCardRedesMobile{
+                        display: flex;
+                        background-color: $celeste_light3;
+                        padding: 1rem;
+                        justify-content: center;
+                        align-items: flex-end;
+                        display: flex;
+                        gap: 2rem;
+                        img{
+                            transform: scale(0.8);
+                        }
+                        border-left: 2px solid $celeste_light;
+                        border-right: 2px solid $celeste_light;
+                        border-bottom: 2px solid $celeste_light;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+            .nosotrosCita{
+                display: flex;
+                width: 100%;
+                gap: 2rem;
+                margin: 2rem 0rem 2rem 0rem;
+                .card{
+                    .card-body{
+                        p{
+                            font-size: 0.9rem;
+                        }
+
+                    }
+                }
+            }
+        }
         .footer{
-            margin-top: 50px;
-            margin-bottom: 20px;
-            .footerNav{
-                .logoVariant2{
-                    transform: scale(0.7);
-                }
-                .footerRedes{
-                    transform: scale(0.7);
-                }
-            }
-            .footerCopyright>h6{
-                font-size: 0.6em;
-            }
+            @include footerMQ480
         }
     }
 }
