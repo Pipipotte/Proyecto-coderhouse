@@ -407,6 +407,7 @@ ESTILO DEL PORTFOLIO
             font-family: Epilogue;
             font-size: 22px;
             font-weight: 400;
+            line-height: 1rem;
             letter-spacing: -0.04em;
             text-align: left;
             align-items: center;
@@ -419,18 +420,19 @@ ESTILO DEL PORTFOLIO
             font-family: Epilogue;
             font-size: 22px;
             font-weight: 400;
+            line-height: 1rem;
             letter-spacing: -0.04em;
             text-align: left;
             align-items: center;
             width: fit-content; }
             .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas .cajasInfoCaracteristicas2 .cajasInfoCaracteristicas2Icon {
               width: fit-content; }
-          .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas#cajasInfoCaracteristicasCliente1 {
-            color: #E5710A; }
-          .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas#cajasInfoCaracteristicasCliente2 {
-            color: #DC2C9C; }
-            .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas#cajasInfoCaracteristicasCliente2 img {
-              filter: invert(37%) sepia(45%) saturate(2033%) hue-rotate(300deg) brightness(86%) contrast(101%); }
+          .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas#cajasInfoCaracteristicasCliente2 img {
+            filter: invert(37%) sepia(45%) saturate(2033%) hue-rotate(300deg) brightness(86%) contrast(101%); }
+          .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas#cajasInfoCaracteristicasCliente3 img {
+            filter: invert(69%) sepia(91%) saturate(571%) hue-rotate(359deg) brightness(101%) contrast(104%); }
+          .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas#cajasInfoCaracteristicasCliente4 img {
+            filter: invert(100%) sepia(0%) saturate(1000%) hue-rotate(410deg) brightness(100%) contrast(70%); }
       .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio#cliente1 {
         background: #ffeeca;
         background: linear-gradient(90deg, #ffeeca 0%, #fff7e4 100%);
@@ -458,7 +460,7 @@ ESTILO DEL PORTFOLIO
   100% {
     opacity: 1; } }
       .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio#cliente3 {
-        background-color: #FF8760;
+        background-color: #FFF6D3;
         animation-delay: 0s;
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
@@ -470,13 +472,13 @@ ESTILO DEL PORTFOLIO
   100% {
     opacity: 1; } }
         .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio#cliente3 .cajasInfo h2 {
-          color: white; }
+          color: #4B6D85; }
         .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio#cliente3 .cajasInfo h3 {
-          color: white; }
+          color: #4B6D85; }
         .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio#cliente3 .cajasInfo p {
-          color: white; }
+          color: #4B6D85; }
       .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio#cliente4 {
-        background-color: #86C3E4;
+        background-color: #EFF9FF;
         animation-delay: 0s;
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
@@ -1167,6 +1169,12 @@ EMPIEZA EL MEDIA QUERIES DEL PORTFOLIO
             line-height: 1rem; }
           .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas div div img {
             transform: scale(0.8); }
+          .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas .cajasInfoCaracteristicas1 {
+            font-size: 1rem;
+            line-height: 1rem; }
+          .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasInfo .cajasInfoCaracteristicas .cajasInfoCaracteristicas2 {
+            font-size: 1rem;
+            line-height: 1rem; }
       .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasPortfolioIMG .cajasPortfolioIMGprimario .cajasPortfolioIMGa {
         padding: 4px; }
       .bodyPortfolio .gridPortfolio .mainPortfolio .cajasPortfolio .cajasPortfolioIMG .cajasPortfolioIMGprimario .cajasPortfolioIMGsecundario .cajasPortfolioIMGb {
